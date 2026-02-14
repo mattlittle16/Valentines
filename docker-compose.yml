@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  vday-memorial:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vday-memorial:latest
+    container_name: vday-memorial-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    labels:
+      - "com.vday.memorial=true"
+      - "com.vday.memorial.version=1.0"
+      - "com.vday.memorial.description=Valentine's Day 2015 Memorial"
+
+networks:
+  default:
+    name: vday-network

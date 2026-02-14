@@ -1,0 +1,193 @@
+﻿/*Random Styles*/
+.BoxShadow {
+    box-shadow: 0 2px 9pt -2pt #3A3A3A;
+}
+
+.HoverMe:hover {
+    cursor: pointer;
+}
+
+.NoDisplay {
+    display: none;
+}
+
+.NoList {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.SpaceList li {
+    margin-bottom: 10px;
+}
+
+.SpaceList li:last-child {
+    margin-bottom: 0 !important;
+}
+
+/*Margins*/
+.MarginTop5 {
+    margin-top: 5px;
+}
+
+.MarginTop10 {
+    margin-top: 10px;
+}
+
+.MarginTop15 {
+    margin-top: 15px;
+}
+
+.MarginTop20 {
+    margin-top: 20px;
+}
+
+.MarginTop25 {
+    margin-top: 25px;
+}
+
+.MarginTop50 {
+    margin-top: 50px;
+}
+
+.MarginRight10 {
+    margin-right: 10px;
+}
+
+.MarginRight15 {
+    margin-right: 15px;
+}
+
+.MarginRight20 {
+    margin-right: 20px;
+}
+
+.MarginRight25 {
+    margin-right: 25px;
+}
+
+.MarginBottom15 {
+    margin-bottom: 15px;
+}
+
+.MarginLeft10 {
+    margin-left: 10px;
+}
+
+.MarginLeft20 {
+    margin-left: 20px !important;
+}
+
+
+/*Paddings*/
+.Padding10 {
+    padding: 10px;
+}
+
+.PaddingTop20 {
+    padding-top: 20px;
+}
+
+
+/*Display*/
+.Left {
+    float: left;
+}
+
+.CenterMargin {
+    margin: 0 auto !important;
+}
+
+.Center {
+    text-align: center;
+}
+
+.MakeBlock {
+    display: block !important;
+}
+
+
+/*Widths*/
+.Width100 {
+    width: 100%;
+}
+
+.RWidth50 {
+    width: 50%;
+}
+
+.Width250 {
+    width: 250px;
+}
+
+
+/*Forms*/
+.input-group-padding {
+    padding: 6px 12px;
+}
+
+
+/*Text Colors*/
+.WhiteText {
+    color: #ecf0f1;
+}
+
+.WhiteLinkDark {
+    color: #ecf0f1;
+}
+
+.WhiteLinkDark:hover {
+    color: #bdc3c7;
+}
+
+.WhiteTextTable tr td {
+    color: #ecf0f1;
+}
+
+.WhiteButtonText {
+    color: #ecf0f1 !important;
+}
+
+.RedText {
+    color: #e74c3c;
+}
+
+.GreenText{
+    color: #27ae60;
+}
+
+.BlueText{
+    color:#2980b9;
+}
+
+.GrayText {
+    color: #757575;
+}
+
+.BlackText {
+    color: #34495e;
+}
+
+.WhiteGlyph, .WhiteGlyph a {
+  color: #ecf0f1;
+}
+
+a:hover span, a:hover p, a:hover {
+    color:rgba(236, 240, 241,1.0) !important;
+}
+
+
+/*Background Colors*/
+
+
+/*Text*/
+.TextRight {
+    text-align: right;
+}
+
+.SmallText {
+    font-size: 10pt;
+}
+
+.InlineBlock {
+    display: inline-block;
+}

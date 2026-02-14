@@ -1,0 +1,111 @@
+/* Import all original CSS files */
+@import url('/css/bootstrap.min.css');
+@import url('/css/flipclock.css');
+@import url('/css/Site.css');
+@import url('/css/Generic.css');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+/* Additional app-level styles */
+.App {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Ensure content appears above backgrounds - only set z-index, preserve existing positioning */
+.container {
+  position: relative;
+  z-index: 100;
+}
+
+.Countdown,
+.Map,
+.JJ {
+  z-index: 100;
+}
+
+.ClueContainer,
+.NextClue {
+  z-index: 100;
+}
+
+.app-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 300;
+  display: flex;
+  gap: 10px;
+}
+
+.app-controls button {
+  background: rgba(52, 73, 94, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ecf0f1;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.app-controls button:hover {
+  background: rgba(52, 73, 94, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+  background: rgba(41, 128, 185, 0.9) !important;
+}
+
+.btn-secondary:hover {
+  background: rgba(41, 128, 185, 1) !important;
+}
+
+.btn-warning {
+  background: rgba(230, 126, 34, 0.9) !important;
+}
+
+.btn-warning:hover {
+  background: rgba(230, 126, 34, 1) !important;
+}
+
+/* Utility classes from original */
+.MarginTop20 {
+  margin-top: 20px;
+}
+
+.MarginTop10 {
+  margin-top: 10px;
+}
+
+.InlineBlock {
+  display: inline-block;
+}
+
+.MakeBlock {
+  display: block;
+}
+
+.MarginLeft20 {
+  margin-left: 20px;
+}
+
+/* Planet trail elements */
+.planetrail3,
+.planetrail2,
+.planetrail {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  z-index: 40;
+  border-radius: 10px;
+}
+
+/* Check mark styling */
+.Check {
+  color: rgba(39, 174, 96, 1.0);
+  text-shadow: 2px 2px 4px #000000;
+}
