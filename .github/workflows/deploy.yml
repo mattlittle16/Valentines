@@ -1,0 +1,44 @@
+name: Deploy ValentinesMemory to Homelab
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -t valentinesmemory:latest \
+            -t valentinesmemory:${{ github.sha }} \
+            .
+
+      - name: Stop and remove old container
+        run: |
+          docker stop valentinesmemory || true
+          docker rm valentinesmemory || true
+
+      - name: Run new container
+        run: |
+          docker run -d \
+            --name valentinesmemory \
+            --restart unless-stopped \
+            --network app-network \
+            valentinesmemory:latest
+
+      - name: Clean up old images
+        run: |
+          docker image prune -f
+
+      - name: Verify deployment
+        run: |
+          sleep 5
+          docker ps | grep valentinesmemory
+          echo "Deployment successful! Container is running."
