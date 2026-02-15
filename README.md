@@ -1,5 +1,6 @@
 # Valentine's Day 2015 Memorial
 
+
 A modernized React + Vite version of the original ASP.NET MVC Valentine's Day scavenger hunt from 2015. This memorial allows you to experience the original clues and navigate through different phases leading up to Valentine's Day.
 
 ## Features
